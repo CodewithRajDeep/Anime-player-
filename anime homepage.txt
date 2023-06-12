@@ -1,0 +1,94 @@
+ <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F3EFF4"
+        app:tabIndicatorColor="#130F0F"
+        tools:ignore="InvalidId">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Updates" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Settings" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tab_page"
+        android:foreground="@drawable/homeblack"
+        android:foregroundTint="#131212"
+        tools:ignore="InvalidId">
+
+
+        <TextView
+            android:id="@+id/animeplayer.io"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tab_page"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="616dp"
+            android:layout_marginEnd="223dp"
+            android:layout_marginBottom="16dp"
+            android:padding="10dp"
+            android:text="Animeplayer.io"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_baseline_android_24" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="381dp"
+            android:layout_height="222dp"
+            android:layout_below="@+id/view_page"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="431dp"
+            app:srcCompat="@drawable/onepiecewallpaper" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="374dp"
+            android:layout_height="259dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="158dp"
+            app:srcCompat="@drawable/bleachwallpaper" />
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

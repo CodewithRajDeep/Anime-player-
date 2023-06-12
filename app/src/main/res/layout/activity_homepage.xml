@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/anime"
+    tools:context=".Homepage">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="updates" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="home" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="news" />
+        </com.google.android.material.tabs.TabLayout>
+
+        <ImageView
+            android:id="@+id/alchemy"
+            android:layout_width="138dp"
+            android:layout_height="176dp"
+            android:layout_marginTop="51dp"
+            android:layout_marginBottom="448dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.058"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tab"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/alchemist_animelist" />
+
+        <ImageView
+            android:id="@+id/assassination"
+            android:layout_width="154dp"
+            android:layout_height="172dp"
+            android:layout_marginTop="52dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.359"
+            app:layout_constraintStart_toEndOf="@+id/alchemy"
+            app:layout_constraintTop_toBottomOf="@+id/tab"
+            app:layout_constraintVertical_bias="0.006"
+            app:srcCompat="@drawable/assasination" />
+
+        <ImageView
+            android:id="@+id/bleach"
+            android:layout_width="141dp"
+            android:layout_height="169dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.059"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alchemy"
+            app:layout_constraintVertical_bias="0.132"
+            app:srcCompat="@drawable/bleach" />
+
+        <ImageView
+            android:id="@+id/horimiya"
+            android:layout_width="140dp"
+            android:layout_height="168dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.298"
+            app:layout_constraintStart_toEndOf="@+id/bleach"
+            app:layout_constraintTop_toBottomOf="@+id/assassination"
+            app:layout_constraintVertical_bias="0.163"
+            app:srcCompat="@drawable/hiromiya_animelist" />
+
+        <ImageView
+            android:id="@+id/onepiece"
+            android:layout_width="132dp"
+            android:layout_height="162dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.684"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horimiya"
+            app:layout_constraintVertical_bias="0.379"
+            app:srcCompat="@drawable/onepiece" />
+
+        <ImageView
+            android:id="@+id/wotakoi"
+            android:layout_width="137dp"
+            android:layout_height="174dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/onepiece"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bleach"
+            app:layout_constraintVertical_bias="0.431"
+            app:srcCompat="@drawable/wotakoi_animelist" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
